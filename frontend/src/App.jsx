@@ -1,10 +1,19 @@
+import {CreateTodo} from './Components/CreateTodo'
+
+import './App.css'
+import './index.css'
+import { Todos } from './Components/Todos'
+
 
 function App() {
   
 
   return (
     <>
-      Hello there v2!!!
+
+      <CreateTodo/>
+      <Todos></Todos>
+      
     </>
   )
 }
