@@ -1,16 +1,16 @@
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-mongoose.connect("");
+// mongoose.connect("");
 
-const todoSchema = mongoose.Schema({
-    title: String,
-    description:String,
-    completed:Boolean
-})
+// const todoSchema = mongoose.Schema({
+//     title: String,
+//     description:String,
+//     completed:Boolean
+// })
 
-const todo = mongoose.model('todos',todoSchema);
+// const todo = mongoose.model('todos',todoSchema);
 
-module.exports = {
-    todo
+// module.exports = {
+//     todo
 
-}
+// }

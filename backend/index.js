@@ -2,15 +2,35 @@ const express = require('express');
 const { createTodo, updateTodo } = require('./types');
 const { todo } = require('./db');
 const app = express();
-const port = 3000;
+const cors = require('cors');
+
+const port = 3001;
 
 app.use(express.json())
+app.use(cors());
 
-app.get('/', async (req, res) => {
-    const todos = await todo.find({
+app.get('/',  (req, res) => {
+    const todos=[{
+    "_id":"zjczjc",
+    "title":"zczc",
+    "description":"cxx",
+    "completed":true
+   },{
+    "_id":"gfdghdh",
+    "title":"hdfhdf",   
+    "description":"hdfhdfhad",
+    "completed":false
+   },{
+    "_id":"gfdgdfgdfg",
+    "title":"dfsgfsdgsfd",
+    "description":"",
+    "completed":false
+   }];
 
-    })
-    res.json({todos});
+    // })
+   res.json({
+    todos});
+    //res.send("haan bhoko");
 });
 
 app.post('/todo-post',async (req,res)=>{
