@@ -1,5 +1,5 @@
 export function Todos({todos}){
-    return  <>
+    return  <div>
 {/* 
     <div>   
     <h1>{todos[0].title}</h1>
@@ -14,7 +14,6 @@ export function Todos({todos}){
     <button>{todos[0].completed == true ? "completed" : "Mark as completed"}DONE
     </button>
     </div> */}
-
     {todos.map((todo)=>{
         return <div>
             <h1>{todo.title}</h1>
@@ -24,5 +23,5 @@ export function Todos({todos}){
 
         </div>
     })}
-    </>
+    </div>
 }

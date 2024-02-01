@@ -6,6 +6,7 @@ import { Todos } from './Components/Todos'
 import { useState , useEffect} from 'react'
 
 
+
 function App() {
 
   const [todos,setTodos] = useState([]);
@@ -29,12 +30,12 @@ function App() {
   
 
   return (
-    <>
+    <div>
 
       <CreateTodo/>
       <Todos todos={todos}></Todos>
       
-    </>
+    </div>
   )
 }
 
